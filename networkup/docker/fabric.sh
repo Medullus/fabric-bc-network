@@ -87,7 +87,7 @@ function installCC(){
 
     echo "Install cc using ${CC_NAME}:${CC_VER}"
 
-    docker exec cli peer chaincode install -p chaincode -n ${CC_NAME} -v ${CC_VER}
+    docker exec -d cli peer chaincode install -p chaincode -n ${CC_NAME} -v ${CC_VER}
 
 }
 
@@ -107,7 +107,7 @@ function instantiateCC(){
 
     echo "Instantiating cc with args: ${CC_ARGS}"
 
-    docker exec cli peer chaincode instantiate -o orderer.example.com:7050 -n ${CC_NAME} -v ${CC_VER} -c '{"Args":["init","a","100","b","200"]}' -C foo
+    docker exec -d cli peer chaincode instantiate -o orderer.example.com:7050 -n ${CC_NAME} -v ${CC_VER} -c '{"Args":["init","a","100","b","200"]}' -C foo
 }
 
 
@@ -196,7 +196,6 @@ function installAndInstantiate(){
 
     instantiateCC $1 $2
 
-    exit 0
 }
 
 
@@ -209,6 +208,15 @@ function upWithCC(){
     up
     sleep 5
     installAndInstantiate $1 $2
+}
+
+function restartWithCC(){
+    down
+    clean
+    sleep 20
+    upWithCC $1 $2
+    echo "Network reset complete"
+    exit 0
 }
 
 
@@ -248,6 +256,9 @@ do
             ;;
         upWithCC)
             upWithCC $2 $3
+            ;;
+        restartWithCC)
+            restartWithCC $2 $3
             ;;
         restart)
             down

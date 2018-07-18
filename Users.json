@@ -1,0 +1,36 @@
+User:
+{"requestHeader":{"caller":"AtlasHolding","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasHolding"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasHolding","org":"Org1"},"entityMasters":[{"account":"659871236","additionalReview":"N","bank":"BOFAUS33","country":"US","fnlCurr":"USD","glEntityCode":"A0","group":"A1","nettingSettRules":"No restrict","paymaster":"A0","paymasterEligible":"Y","subName":"AtlasHolding","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"AtlasAmericas","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasAmericas"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasAmericas","org":"Org1"},"entityMasters":[{"account":"125478965","additionalReview":"N","bank":"BOFAUS33","country":"US","fnlCurr":"USD","glEntityCode":"A1","group":"A1","nettingSettRules":"No restrict","paymaster":"A0","paymasterEligible":"Y","subName":"AtlasAmericas","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"AtlasUSA","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasUSA"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasUSA","org":"Org1"},"entityMasters":[{"account":"445125893","additionalReview":"N","bank":"WFBIUS6S","country":"US","fnlCurr":"USD","glEntityCode":"A2","group":"A1","nettingSettRules":"No restrict","paymaster":"A0","paymasterEligible":"Y","subName":"AtlasUSA","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"AtlasEurope","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasEurope"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasEurope","org":"Org1"},"entityMasters":[{"account":"569854126","additionalReview":"N","bank":"DEUTDEFF","country":"DE","fnlCurr":"EUR","glEntityCode":"A3","group":"A1","nettingSettRules":"No restrict","paymaster":"N/A","paymasterEligible":"N","subName":"AtlasEurope","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"AtlasGlobal","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasGlobal"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasGlobal","org":"Org1"},"entityMasters":[{"account":"132563256","additionalReview":"N","bank":"BOFAUS33","country":"US","fnlCurr":"USD","glEntityCode":"A4","group":"A1","nettingSettRules":"No Restrict","paymaster":"A0","paymasterEligible":"Y","subName":"AtlasGlobal","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"AtlasIndia","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasIndia"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasIndia","org":"Org1"},"entityMasters":[{"account":"521698436","additionalReview":"Y","bank":"CITIINBB","country":"IN","fnlCurr":"INR","glEntityCode":"A5","group":"A1","nettingSettRules":"No Net, Non-Auto","paymaster":"N/A","paymasterEligible":"N","subName":"AtlasIndia","wht":"Y"}]}
+User:
+{"requestHeader":{"caller":"AtlasTrading","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"AtlasTrading"}}
+EntityMaster:
+{"requestHeader":{"caller":"AtlasTrading","org":"Org1"},"entityMasters":[{"account":"978854112","additionalReview":"N","bank":"IRVTUS3N","country":"US","fnlCurr":"USD","glEntityCode":"A6","group":"A1","nettingSettRules":"No restrict","paymaster":"N/A","paymasterEligible":"N","subName":"AtlasTrading","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"BasicUSA","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"BasicUSA"}}
+EntityMaster:
+{"requestHeader":{"caller":"BasicUSA","org":"Org1"},"entityMasters":[{"account":"987654321","additionalReview":"N","bank":"JPMCUS33","country":"US","fnlCurr":"USD","glEntityCode":"B1","group":"B1","nettingSettRules":"No restrict","paymaster":"N/A","paymasterEligible":"N","subName":"BasicUSA","wht":"N"}]}
+User:
+{"requestHeader":{"caller":"CasablancaCorp","org":"Org1"},"userRegister":{"secret":"defaultpw","userName":"CasablancaCorp"}}
+EntityMaster:
+{"requestHeader":{"caller":"CasablancaCorp","org":"Org1"},"entityMasters":[{"account":"523694278","additionalReview":"N","bank":"CITIUS33","country":"US","fnlCurr":"USD","glEntityCode":"CX","group":"CX","nettingSettRules":"No restrict","paymaster":"N/A","paymasterEligible":"N/A","subName":"CasablancaCorp","wht":"N"}]}

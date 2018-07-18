@@ -5,13 +5,15 @@
 set -e
 # This script expedites the chaincode development process by automating the
 # requisite channel create/join commands
-pwd
+#pwd
 # We use a pre-generated orderer.block and channel transaction artifact (myc.tx),
 # both of which are created using the configtxgen tool
 
 # first we create the channel against the specified configuration in myc.tx
 # this call returns a channel configuration block - myc.block - to the CLI container
 echo "creating channel"
+sleep 10
+
 peer channel create -c foo -f ./crypto/v1.1/foo.tx -o orderer.example.com:7050
 
 # now we will join the channel and start the chain with myc.block serving as the
