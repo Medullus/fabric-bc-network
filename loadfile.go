@@ -100,19 +100,3 @@ func callApi(endpoint string, str string ){
 	fmt.Printf("Code : %s for %s\n %s \n\n", resp.Status, endpoint, str)
 }
 
-
-
-type EntityMaster struct {
-	SubName           string `json:"subName"`
-	GlEntityCode      string `json:"glEntityCode"`
-	Group             string `json:"group"`
-	FnlCurr           string `json:"fnlCurr"`
-	Account           string    `json:"account"`
-	AdditionalReview  string `json:"additionalReview"`
-	Bank              string `json:"bank"`
-	Country           string `json:"country"`
-	NettingSettRules  string `json:"nettingSettRules"`
-	Paymaster         string `json:"paymaster"`
-	PaymasterEligible string `json:"paymasterEligible"`
-	Wht               string `json:"wht"`
-}

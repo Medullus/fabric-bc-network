@@ -194,6 +194,8 @@ function installAndInstantiate(){
 
     installCC $1 $2
 
+
+    sleep 5
     instantiateCC $1 $2
 
 }
