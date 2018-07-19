@@ -16,18 +16,26 @@ const(
 	PO = "PurchaseOrder:"
 	INVOICE = "Invoice:"
 
-	ADDUSER = "http://localhost:3000/users"
-	ADDINVOICE = "http://localhost:3000/invoices"
-	ADDENTITY = "http://localhost:3000/entitymasters"
-	ADDPO = "http://localhost:3000/purchaseorders"
+	URL = "http://localhost:3000"
+
+	ADDUSER = URL+"/users"
+	ADDINVOICE = URL+"/invoices"
+	ADDENTITY = URL+"/entitymasters"
+	ADDPO = URL+"/purchaseorders"
 )
+
+var badList = make([]string, 1)
 
 func main(){
 	files :=  []string{"Users.json", "PurchaseOrder.json", "Invoices.json"}
+	//files :=  []string{"Invoices.json"}
+
 
 	for _,v := range files{
 		runFile(v)
 	}
+
+	fmt.Println(badList)
 
 }
 
@@ -84,6 +92,10 @@ func callApi(endpoint string, str string ){
 	}
 
 	defer resp.Body.Close()
+
+	if resp.StatusCode != 200{
+		badList = append(badList, endpoint+"----"+str)
+	}
 
 	fmt.Printf("Code : %s for %s\n %s \n\n", resp.Status, endpoint, str)
 }
