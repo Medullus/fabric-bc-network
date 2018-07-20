@@ -7,6 +7,7 @@ import (
 	"os"
 	"bufio"
 	"fmt"
+	"time"
 )
 
 
@@ -30,13 +31,16 @@ func main(){
 	files :=  []string{"Users.json", "PurchaseOrder.json", "Invoices.json"}
 	//files :=  []string{"Invoices.json"}
 
+	start := time.Now()
 
 	for _,v := range files{
 		runFile(v)
 	}
 
+	t := time.Now()
+	elapsed := t.Sub(start)
+	fmt.Println("Completion time : "+elapsed.String())
 	fmt.Println(badList)
-
 }
 
 func runFile(fileStr string){
