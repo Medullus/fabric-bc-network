@@ -18,17 +18,17 @@ networks:
 services:
 # usage docker exec -it cli bash
 #
-  restapp:
-    image: huytran88/fabric-rest-api:latest
-    container_name: restapp
-    ports:
-      - ${PORT}:3000
-    environment:
-      - FAB_NETWORK_CONFIG=docker-network-.json
-    depends_on:
-      - cli
-    networks:
-      - fabricbros
+#  restapp:
+#    image: huytran88/fabric-rest-api:latest
+#    container_name: restapp
+#    ports:
+#      - ${PORT}:3000
+#    environment:
+#      - FAB_NETWORK_CONFIG=docker-network-.json
+#    depends_on:
+#      - cli
+#    networks:
+#      - fabricbros
 
   postgresql:
     image: postgres:10.4
