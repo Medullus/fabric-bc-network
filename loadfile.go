@@ -19,14 +19,14 @@ const(
 	PO = "PurchaseOrder:"
 	INVOICE = "Invoice:"
 
-	//URL = "http://leanblocks.eastus.cloudapp.azure.com"
-	URL = "http://localhost:3000"
+	URL = "http://leanblocks.eastus.cloudapp.azure.com"
+	//URL = "http://localhost:3000"
 
 	ADDUSER = URL+"/users"
 	ADDINVOICE = URL+"/invoices"
 	ADDENTITY = URL+"/entitymasters"
 	ADDPO = URL+"/purchaseorders"
-	DOC = URL+"/documents/123"
+	DOC = URL+"/documents"
 )
 
 var badList = make([]string, 1)
